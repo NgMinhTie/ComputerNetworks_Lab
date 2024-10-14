@@ -29,7 +29,7 @@ public class lab1cEx2_client {
                 write.close();
                 read.close();
                 client_socket.close();
-                //Thread.sleep(100);
+                Thread.sleep(100); //! LUU Y: HOC THEM CACH DUNG THREAD.SLEEP();
             }
 
         } catch (Exception e) {

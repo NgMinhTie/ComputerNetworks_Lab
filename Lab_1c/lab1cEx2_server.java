@@ -18,7 +18,9 @@ public class lab1cEx2_server {
             Socket connectionSocket = welcomeSocket.accept();
 
                 //BufferedReader reading = new BufferedReader(new InputStreamReader(connectionSocket.getInputStream()));
+                // We use BufferedReader to read to simple text
                 ObjectInputStream reading = new ObjectInputStream(connectionSocket.getInputStream());
+                // We use inputStream in order to read the complex objects
                 String line = (String) reading.readObject();
                 
                 ObjectOutputStream sending = new ObjectOutputStream(connectionSocket.getOutputStream());
